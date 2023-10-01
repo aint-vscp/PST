@@ -1,30 +1,30 @@
 @font-face {
     font-family: 'AnonymousPro';
-    src: url('/fonts/AnonymousPro-Regular.ttf') format('truetype');
+    src: url('fonts/AnonymousPro-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Baybayin';
-    src: url('/fonts/BAYBAYIN-SISIL_07012018_1032_UNICODE.ttf') format('truetype');
+    src: url('fonts/BAYBAYIN-SISIL_07012018_1032_UNICODE.ttf') format('truetype');
 }
 @font-face {
     font-family: 'LeagueSpartan';
-    src: url('/fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    src: url('fonts/LeagueSpartan-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'MontReg';
-    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+    src: url('fonts/Montserrat-Regular.ttf') format('truetype');
 }
 @font-face {
     font-family: 'MontSemB';
-    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    src: url('fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Playlist';
-    src: url('/fonts/Playlist-Script.otf') format('opentype');
+    src: url('fonts/Playlist-Script.otf') format('opentype');
 }
 @font-face {
     font-family: 'Hoves';
-    src: url('/fonts/TT-Hoves-Pro-Bold-Outline-Trial.ttf') format('truetype');
+    src: url('fonts/TT-Hoves-Pro-Bold-Outline-Trial.ttf') format('truetype');
 }
 
 * {
