@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url('/fonts/AnonymousPro-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Baybayin';
+    src: url('/fonts/BAYBAYIN-SISIL_07012018_1032_UNICODE.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('/fonts/LeagueSpartan-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontReg';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontSemB';
+    src: url('/fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Playlist';
+    src: url('/fonts/Playlist-Script.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Hoves';
+    src: url('/fonts/TT-Hoves-Pro-Bold-Outline-Trial.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #081414;
+}
+
+/* ================================================================= Loading screen */
+
+.loading_screen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #222831;
+    z-index: 100;
+    overflow: hidden;
+    animation: end-loading 2s 10s;
+}
+
+.loading_screen_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo path{
+    stroke-dashoffset: 1250;
+    stroke-dasharray: 1250;
+    fill-opacity: 0;
+    animation: draw-fill 10s forwards;
+}
+
+@keyframes draw-fill {
+    0% {
+        stroke-dashoffset: 1250;
+        stroke-dasharray: 1250;
+        fill-opacity: 0;
+    }
+    70% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+        fill-opacity: 0;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0;
+        fill-opacity: 1;
+    }
+}
+
+@keyframes end-loading {
+    to {
+        background-color: #081414;
+        opacity: 0;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.shadow {
+    position: absolute;
+    width: 30vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, black, rgba(8, 20, 20, .1));
+    z-index: 20;
+}
+
+.left-side .PST {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-family: Hoves;
+    color: #80F0FF;
+    transform: translate(0,-50%);
+    font-size: 95px;
+}
+
+.Credentials {
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    transform: translate(0,-50%);
+}
+
+.Credentials img {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.Credentials .PSTText {
+    font-family: MontReg;
+    color: #eee;
+    font-size: 13px;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passContainer {
+    width: 65%;
+    height: 40%;
+    top: 50%;
+    left: 40%;
+}
+
+.passContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorIndicator {
+    width: 10px;
+    height: 10px;
+    background-color: #FF3131;
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+}
+
+.passwordInput{
+    border-radius: 2px;
+    border: 3px solid #80F0FF;
+    background-color: #081414;
+    width: 90%;
+    height: 50px;
+    color:#1F3F42;
+    font-family: MontReg;
+    font-size: 20px;
+}
+
+.suggestion {
+    margin-left: 31px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1F3F45;
+    font-family: MontReg;
+    font-size: 18px;
+}
+
+.red {
+    background-color: #FF5555;
+}
+
+.yellow {
+    background-color: #FFCC00;
+}
+
+.green {
+    background-color: #66CC66;
+}
+
+.toPortfolio {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    opacity: .5;
+    font-family: MontReg;
+    color: #EEEEEE;
+    top: 50%;
+    right: 1%;
+    transform: rotate(90deg) translate(-50%, -50%);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.toPortfolio:hover {
+    opacity: 1;
+}
