@@ -1,1 +1,1 @@
-# (https://aint-zyrrrrr.github.io/PST/)PST Website
+# [PST](https://aint-zyrrrrr.github.io/PST/)
